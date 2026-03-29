@@ -52,7 +52,7 @@ def carregar_youtube():
 
 # ========== FUNÇÃO DO BOT ==========
 def resposta_bot(mensagens, documento):
-    system_mensagem = 'Voce e um assistente amigavel chamado olaf que tem acesso as seguintes informacoes para dar uma resposta precisa: {informacoes}'
+    system_mensagem = 'Voce e um assistente amigavel que tem acesso as seguintes informacoes para dar uma resposta precisa: {informacoes}'
     mensagens_modelo = [('system', system_mensagem)]
     mensagens_modelo += mensagens
     template = ChatPromptTemplate.from_messages(mensagens_modelo)
